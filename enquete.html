@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Desafio da Enquete</title>
+    <style type="text/css">
+        .circulo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            height: 350px;
+            width: 350px;
+            left: 500px;
+            text-align: center;
+            font-size: 35px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .sim{
+            cursor: pointer;
+            position: relative;
+            left: 500px;
+            bottom: -50px;
+            padding: 15px 25px;
+            font-size: 18px;
+            text-align: center;
+            color: #fff;
+            background-color: #00d107;
+            border: 2px rgb(63, 61, 61);
+            border-style: double;
+            border-radius: 6px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            z-index: 1;
+        }
+        .sim:hover{
+            background-color: #3e8e41
+            
+        }
+        .sim:active{
+            background-color: blue;
+            transform: translateY(4px);
+    }
+
+    .nao{
+            cursor: pointer;
+            position: relative;
+            left: 650px;
+            bottom: -50px;
+            padding: 15px 25px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: red;
+            border: 2px rgb(63, 61, 61);
+            border-style: double;
+            border-radius: 6px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            z-index: 1;
+        }
+        .nao:hover{
+            background-color: 
+            
+        }
+        .nao:active{
+            background-color: blue;
+            transform: translateY(4px);
+    }
+
+    .result{
+        margin-top: 2px;
+        position: relative;
+        bottom: -80px;
+        left: 540px;
+        width: 100px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(4, 55, 88, 0.712);
+    }
+
+    #sp{
+        background-color: #3e8e41;
+        width: 10px;
+        text-align: center;
+        color: white;
+    }
+    #fc{
+        background-color: red;
+        width: 10px;
+        text-align: center;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="circulo"> Você acha que o palmeiras tem mundial?</div>
+    <button class="sim" type="button" onclick="sim1()">SIM</button>
+    <button class="nao" type="button" onclick="nao1()">NÃO</button>
+    <div class="result"> <b>Resultado:</b></div>
+    <div class="result" id="sim"> <b>SIM</b> </div>
+    <div class="result" id="sp">0</div>
+    <div class="result" id="nao"> <b>NÃO</b> </div>
+    <div class="result" id="fc">0</div>   
+    <script src="script.js"></script> 
+</body>
+</html>
